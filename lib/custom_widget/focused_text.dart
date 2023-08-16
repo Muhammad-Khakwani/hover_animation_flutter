@@ -30,10 +30,11 @@ class _FocusedTextState extends State<FocusedText> {
           ),
         ),
         InkWell(
+          hoverColor: Colors.transparent,
           child: Container(
             decoration: BoxDecoration(boxShadow: [
               BoxShadow(
-                  color: onEnter ? Colors.transparent : Colors.grey.shade100,
+                  color: onEnter ? Colors.transparent : Colors.white,
                   blurRadius: 30,
                   blurStyle: BlurStyle.inner)
             ]),
