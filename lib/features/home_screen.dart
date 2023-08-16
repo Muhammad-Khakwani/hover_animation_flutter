@@ -10,10 +10,31 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Material(
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [Text("FOCUS")],
+    return Material(
+      child: SafeArea(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            InkWell(
+              child: Stack(alignment: AlignmentDirectional.center, children: [
+                Text(
+                  "F",
+                  style: TextStyle(
+                    fontSize: 100,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Container(
+                  decoration: BoxDecoration(color: Colors.black),
+                  width: 60,
+                  height: 100,
+                ),
+              ]),
+              onHover: (value) => () {},
+            )
+          ],
+        ),
       ),
     );
   }
