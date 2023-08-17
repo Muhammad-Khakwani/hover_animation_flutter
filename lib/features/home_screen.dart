@@ -11,7 +11,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return Material(
+    return const Material(
       child: SafeArea(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,

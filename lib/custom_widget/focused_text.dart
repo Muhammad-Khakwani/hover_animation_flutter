@@ -24,7 +24,7 @@ class _FocusedTextState extends State<FocusedText> {
       child: Stack(alignment: AlignmentDirectional.center, children: [
         Text(
           widget.text,
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 100,
             fontWeight: FontWeight.bold,
           ),
@@ -34,8 +34,8 @@ class _FocusedTextState extends State<FocusedText> {
           child: Container(
             decoration: BoxDecoration(boxShadow: [
               BoxShadow(
-                  color: onEnter ? Colors.transparent : Colors.white,
-                  blurRadius: 30,
+                  color: onEnter ? Colors.transparent : Colors.black,
+                  blurRadius: 20,
                   blurStyle: BlurStyle.inner)
             ]),
             width: 90,
